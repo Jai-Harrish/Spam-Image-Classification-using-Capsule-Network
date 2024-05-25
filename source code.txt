@@ -167,7 +167,7 @@ def load_and_preprocess_image(image_path, target_size=(240, 240)):
     img_preprocessed = tf.keras.applications.resnet50.preprocess_input(img_array[None, ...])
     return img_array, img_preprocessed
 
-new_image_paths = ["/Users/jai/Downloads/dataset/ham_resized/zzz_0013_4950651bbd_m.jpg","/Users/jai/Downloads/dataset/spam_resized/erosiverefrigerate.jpg", "/Users/jai/Downloads/dataset/ham_resized/zzz_104_c1a35af827_m.jpg","/Users/jai/Downloads/dataset/spam_resized/cBA9i4p7Kf.jpg"]
+new_image_paths = ["Image dataset/Image1, Image dataset/Image2"]
 
 for image_path in new_image_paths:
     # Load and preprocess the image
